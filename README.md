@@ -1,3 +1,7 @@
+## Live Demo
+
+This website is live at [tech-pragyan-server-computer.web.app](https://tech-pragyan-server-computer.web.app)
+
 # Tech Pragyan 2025 Hackathon Web App
 
 This is a full-stack web application for the "Tech Pragyan 2025" hackathon, a 12-hour event organized by the Department of Computer Engineering at Amrutvahini College of Engineering, Sangamner. The event is scheduled for March 27, 2025.
