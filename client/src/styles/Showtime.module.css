@@ -1,0 +1,23 @@
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 300px;
+}
+
+.line {
+    width: 60vw;
+    height: 2px;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    margin: 5px auto 5px auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 400px) {
+    .line {
+        margin: 2px auto;
+        width: 90vw;
+    }
+}

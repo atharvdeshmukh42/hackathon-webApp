@@ -1,0 +1,129 @@
+.organizerInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    margin: 300px auto 0px auto;
+    background: #20043d;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 800px;
+    font-family: 'Times New Roman';
+    box-shadow: 0 0px 5px #ea00ff, 0 0px 5px #ea00ff, 0 0px 5px #03d5ff, 0 0px 5px #03d5ff;
+    z-index: 1;
+    visibility: 1;
+}
+
+.heading1{
+    font-weight: 300;
+    margin: 10px;
+}
+
+.heading2{
+    font-weight: 300;
+    margin: 10px;
+}
+
+.heading3{
+    font-weight: 300;
+    margin: 10px;
+    font-family: monospace;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageAVCOE {
+    height: 100px;
+    background-color: #ffffff;
+    width: 100px;
+    margin: 5px auto;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid white;
+}
+
+.imageIEEE {
+    height: 60px;
+    margin: 10px 20px;
+}
+
+.imageIEEECS {
+    height: 60px;
+    margin: 10px 20px;
+}
+
+.imageISTE {
+    height: 80px;
+    margin: 10px 20px;
+}
+
+@media (max-width: 499px) {
+    /* .imageIEEE {
+        height: 21px;
+        height
+        margin: 10px 20px;
+    }
+    
+    .imageIEEECS {
+        height: 20px;
+        height
+        margin: 10px 20px;
+    }
+    
+    .imageISTE {
+        height: 27px;
+        height
+        margin: 10px 20px;
+    } */
+
+    .imageContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading1{
+        font-weight: 300;
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+    .heading2{
+        font-weight: 300;
+        margin: 10px;
+        font-size: 16px;
+    }
+    
+    .heading3{
+        font-weight: 300;
+        margin: 10px;
+        font-style: 12px;
+        font-family: monospace;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1299px) {
+    .imageIEEE {
+        height: 45px;
+        margin: 10px 20px;
+    }
+    
+    .imageIEEECS {
+        height: 45px;
+        margin: 10px 20px;
+    }
+    
+    .imageISTE {
+        height: 60px;
+        margin: 10px 20px;
+    }
+}
+
+@media (min-width: 1300px) {
+    
+}

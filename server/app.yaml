@@ -1,0 +1,12 @@
+runtime: python39
+
+entrypoint: gunicorn -b :$PORT app:app
+
+env_variables:
+  FLASK_DEBUG: "0"
+  MAX_FILE_SIZE: "15728640"
+  FIREBASE_CREDENTIALS_PATH: "credentials.json"
+
+handlers:
+- url: /.*
+  script: auto 

@@ -1,0 +1,17 @@
+.problemStatements {
+    margin: 300px auto 0px auto;
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cardHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,166 @@
+.footer {
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 
+    0 1px 30px #ea00ff,
+    0 2px 30px #ea00ff,
+    0 2px 30px #03d5ff,
+    0 1px 30px #03d5ff;
+    font-family: monospace;
+    margin-top: 300px;
+}
+
+.footerContent {
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.text {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.image{
+    width: 120px;
+    margin: 20px;
+}
+
+.madeWithText {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.people {
+    margin: 30px 5px;
+}
+
+.peopleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quickLinks {
+    margin: 30px 5px;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkItem {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.madeWith {
+    display: flex;
+}
+
+.socialLink {
+    color: #E1306C; /* Instagram brand color */
+    font-size: 3.5rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.socialLink:hover {
+    transform: scale(1.2);
+    color: #C13584; /* Darker Instagram brand color on hover */
+}
+
+.socialText {
+    font-size: 16px;
+    font-family: monospace;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 14px;
+    }
+    
+    .footerContent {
+        width: 100vw;
+    }
+
+    .madeWith {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 35px 0px;
+    }
+
+    .madeWithText {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .madeWith {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 35px 0px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .heading {
+        font-size: 26px;
+    }
+    
+    .footerContent {
+        width: 80vw;
+    }
+
+    .madeWith {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        margin: 35px 0px;
+    }
+}

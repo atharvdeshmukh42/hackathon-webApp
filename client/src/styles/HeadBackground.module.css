@@ -1,0 +1,67 @@
+.headBackground {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    width: 95vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.bg1 {
+    width: 45vw;
+    opacity: 0.15;
+    position: relative;
+    top: 0;
+}
+
+.bg2 {
+    opacity: 0.3;
+    width: 15vw;
+    margin: 5vw;
+}
+
+.bg3 {
+    opacity: 0.3;
+    width: 15vw;
+    margin: 5vw;
+}
+
+@media (max-width: 400px) {
+    .bg2 {
+        display: none;
+    }
+
+    .bg3 {
+        display: none;
+    }
+
+    .headBackground {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+    .bg2 {
+        display: none;
+    }
+
+    .bg3 {
+        display: none;
+    }
+
+    .b1 {
+        margin: auto;
+    }
+
+    .headBackground {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1300px) {
+    
+}

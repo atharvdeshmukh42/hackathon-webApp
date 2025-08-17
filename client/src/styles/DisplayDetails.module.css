@@ -1,0 +1,38 @@
+.DisplayDetails {
+    margin: 300px auto 0px auto;
+}
+
+.cardHolder {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+}
+
+.info {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px auto;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+@media (max-width: 400px) {
+    
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+    
+}
+
+@media (min-width: 1300px) {
+    
+}

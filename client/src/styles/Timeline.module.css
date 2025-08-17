@@ -1,0 +1,54 @@
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  height: 1200px;
+}
+
+.verticalLine {
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  width: 3px;
+  height: 100%;
+}
+
+.eventHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.horizontalLine {
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+}
+
+.finalEventText {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+}
+
+.finalEventHolder {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalImage {
+  max-height: 180px;
+  margin: auto;
+  width: 70vw;
+  max-width: 300px;
+}

@@ -1,0 +1,60 @@
+.EventDetail {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(45deg, #20043d, #2a0854);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    animation: smoothShadow 4s linear infinite;
+}
+
+.EventDetail:hover {
+    transform: translateY(-15px);
+    background: linear-gradient(45deg, #2a0854, #20043d);
+}
+
+.heading {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.image {
+    width: 70px;
+    margin: 10px;
+}
+
+.description {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+}
+
+@keyframes smoothShadow {
+    0% {
+        box-shadow: 0 2px 8px rgba(234, 0, 255, 0.8), 0 2px 8px rgba(3, 213, 255, 0.2);
+    }
+    25% {
+        box-shadow: 0 2px 8px rgba(234, 0, 255, 0.2), 0 2px 8px rgba(3, 213, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 2px 8px rgba(3, 213, 255, 0.8), 0 2px 8px rgba(234, 0, 255, 0.2);
+    }
+    75% {
+        box-shadow: 0 2px 8px rgba(3, 213, 255, 0.2), 0 2px 8px rgba(234, 0, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 2px 8px rgba(234, 0, 255, 0.8), 0 2px 8px rgba(3, 213, 255, 0.2);
+    }
+}

@@ -1,0 +1,49 @@
+.heading {
+    color: #ffffff;
+    font-family: "Jersey 15";
+    font-family: doto;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.image {
+    margin: auto;
+    height: 50vh;
+    display: block;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .image {
+        margin: auto;
+        width: 90vw;
+        display: block;
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+        width: 80vw;
+        height: 52vw;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+    .image {
+        margin: auto;
+        width: 80vw;
+        height: 52vw;
+        display: block;
+        border-radius: 10px;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (min-width: 1300px) {
+    .image {
+        margin: auto;
+        height: 50vh;
+        display: block;
+        border-radius: 10px;
+    }
+}
+
+

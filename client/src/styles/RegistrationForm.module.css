@@ -1,0 +1,19 @@
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    font-weight: 900;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}

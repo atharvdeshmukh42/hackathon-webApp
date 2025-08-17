@@ -1,0 +1,139 @@
+.cardContainer {
+  perspective: 1000px;
+  width: 250px;
+  height: 375px;
+  margin: 10px;
+  cursor: default;
+  display: block;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.cardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+}
+
+.innerCard {
+  background: #20043d;
+  color: #ffffff;
+  width: 246px;
+  height: 371px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.subHeading {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+}
+
+.image {
+  width: 200px;
+  pointer-events: none;
+}
+
+.details {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 220px;
+}
+
+.additionalInfo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15.5px;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.videoLogo {
+  height: 120px;
+  width: 120px;
+  pointer-events: none;
+}
+
+.problemStateBtn {
+  background-color: #03d5ff;
+  text-decoration: none;
+  color: #000000;
+}
+
+.Btn {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.separator {
+  width: 220px;
+  height: 2px;
+  background-color: #cbcbcb;
+  position: absolute;
+  top: 60px;
+}
+
+.additionalInfo::-webkit-scrollbar {
+  width: 6px;
+}
+
+.additionalInfo::-webkit-scrollbar-track {
+  background: #20043d;
+}
+
+.additionalInfo::-webkit-scrollbar-thumb {
+  background: #03d5ff;
+  border-radius: 3px;
+}
+
+@media (max-width: 400px) {
+  .innerCard {
+    width: 241px;
+    height: 368px;
+  }
+}
+
+
+.problemStateBtn:hover {
+  background-color: #0091cb;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

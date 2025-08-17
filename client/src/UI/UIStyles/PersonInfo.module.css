@@ -1,0 +1,23 @@
+.personInfo {
+    color: #ffffff;
+    font-family: monospace;
+    margin: 20px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.name {
+    font-size: 18px;
+    margin: 2px;
+}
+
+.role {
+    font-size: 14px;
+    margin: 2px;
+}
+
+.phoneNumber {
+    font-size: 14px;
+    margin: 2px;
+}

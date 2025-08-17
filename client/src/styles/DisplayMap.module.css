@@ -1,0 +1,57 @@
+.displayMap {
+  margin: 300px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  width: fit-content;
+}
+
+.infoText {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.map {
+  margin: auto;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.contentHolder {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  .map {
+    width: 95vw;
+    height: 57vw;
+    margin: auto;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+  .map {
+    max-width: 400px;
+    max-height: 300px;
+    width: 95vw;
+    height: 60vw;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1300px) {
+}

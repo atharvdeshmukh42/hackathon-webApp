@@ -1,0 +1,943 @@
+.confirmationContainer {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto 0px auto;
+  border-radius: 20px;
+  background: #20043d;
+  backdrop-filter: blur(10px);
+  border: 0.5px solid #bababa;
+  font-family: monospace;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: "Jersey 15";
+  font-family: doto;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+.input {
+  font-family: monospace;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  background: radial-gradient(#280a48, #20043d);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid #bababa;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0px 5px #ea00ff, 0 0px 5px #ea00ff, 0 0px 5px #03d5ff, 0 0px 5px #03d5ff;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.button {
+  font-family: monospace;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(40deg, #ea00ff, #03d5ff);
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.label {
+  margin: 20px 5px 10px 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.selectDrop {
+  width: 100%;
+}
+
+.selectDrop option {
+  color: #bababa;
+  background-color: #280a48;
+}
+
+.statusMessage {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.loadingSpinner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinnerIcon {
+  animation: spin 1s linear infinite;
+}
+
+/* Updated team details styling */
+.teamDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: rgba(40, 10, 72, 0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.teamInfoSection {
+  padding: 1rem;
+  background: rgba(32, 4, 61, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid rgba(186, 186, 186, 0.2);
+}
+
+.infoSectionHeading {
+  font-size: 1.2rem;
+  color: #03d5ff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.detailsText {
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+  color: #ffffff;
+}
+
+.mentorInfo {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed rgba(186, 186, 186, 0.3);
+}
+
+.teamMembersSection {
+  margin-top: 0.5rem;
+}
+
+.membersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.memberCard {
+  background: rgba(32, 4, 61, 0.8);
+  border: 1px solid rgba(186, 186, 186, 0.2);
+  border-left: 3px solid #03d5ff;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.memberCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(234, 0, 255, 0.2);
+}
+
+.memberHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.memberName {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.memberRole {
+  font-size: 0.9rem;
+  color: #000000;
+  background-color: #03d5ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.memberDetail {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #bababa;
+}
+
+/* Team leader role should stand out */
+.memberRole:contains("Team Lead") {
+  background-color: #ea00ff;
+}
+
+.detailsHeading {
+  font-family: monospace; /* Changed to monospace */
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.memberHeading {
+  font-family: monospace; /* Changed to monospace */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  border-bottom: 0.5px solid rgba(186, 186, 186, 0.3);
+  padding-bottom: 10px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 28px;
+  }
+  
+  .container {
+    margin: 100px auto 0px auto;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+  .heading {
+    font-size: 42px;
+  }
+  
+  .container {
+    margin: 150px auto 0px auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .heading {
+    font-size: 58px;
+  }
+}
+
+/* Add these styles to your existing CSS file */
+
+.accommodationContainer {
+  margin-top: 30px;
+  background: #20043d;
+}
+
+.accommodationDetailsContainer {
+  padding: 10px;
+}
+
+.accommodationInfo {
+  background: rgba(234, 0, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ea00ff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.radioGroup {
+  margin: 20px 0;
+}
+
+.radioLabel {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(40, 10, 72, 0.8);
+  transition: background-color 0.2s ease;
+}
+
+.radioOption:hover {
+  background: rgba(60, 20, 102, 0.8);
+}
+
+.radioOption input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bababa;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.radioOption input[type="radio"]:checked {
+  border-color: #03d5ff;
+}
+
+.radioOption input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(40deg, #ea00ff, #03d5ff);
+  border-radius: 50%;
+}
+
+.radioOption label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkboxGroup {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(40, 10, 72, 0.6);
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.checkboxLabel {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.checkboxOption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.checkboxOption:hover {
+  background: rgba(60, 20, 102, 0.6);
+}
+
+.checkboxOption input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bababa;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkboxOption input[type="checkbox"]:checked {
+  border-color: #03d5ff;
+  background: rgba(3, 213, 255, 0.1);
+}
+
+.checkboxOption input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #03d5ff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.checkboxOption label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.priceSummary {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: linear-gradient(to right, rgba(234, 0, 255, 0.1), rgba(3, 213, 255, 0.1));
+  border: 1px solid rgba(186, 186, 186, 0.3);
+  font-size: 18px;
+  text-align: center;
+}
+
+.divider {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(186, 186, 186, 0.5), transparent);
+}
+
+/* Fee Summary Styles */
+.feeSummaryContainer {
+  margin-top: 30px;
+  background: #20043d;
+}
+
+.feeSummaryContent {
+  padding: 20px;
+}
+
+.feeBreakdown {
+  background: rgba(40, 10, 72, 0.6);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.feeItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 5px 0;
+}
+
+.feeLabel {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.feeAmount {
+  font-size: 16px;
+  color: #03d5ff;
+  font-weight: 600;
+}
+
+.feeDivider {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background: rgba(186, 186, 186, 0.3);
+}
+
+.feeTotal {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.feeTotal .feeLabel,
+.feeTotal .feeAmount {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.feeTotal .feeAmount {
+  color: #ea00ff;
+}
+
+.feeNote {
+  background: rgba(234, 0, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ea00ff;
+}
+
+.feeNote p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Payment Details Styles */
+.paymentDetailsContainer {
+  margin-top: 30px;
+  background: #20043d;
+  margin-bottom: 40px;
+}
+
+.paymentContent {
+  padding: 20px;
+}
+
+.paymentSection {
+  margin-bottom: 30px;
+  background: rgba(40, 10, 72, 0.4);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid rgba(186, 186, 186, 0.2);
+}
+
+.paymentSectionTitle {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(186, 186, 186, 0.3);
+  padding-bottom: 10px;
+  color: #03d5ff;
+}
+
+/* Custom File Upload Button Styling */
+.uploadContainer {
+  position: relative;
+  margin-top: 15px;
+}
+
+.uploadInput {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: rgba(20, 5, 36, 0.8);
+  border: 1px solid rgba(186, 186, 186, 0.3);
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.uploadInput:hover {
+  background: rgba(40, 10, 72, 0.8);
+  border-color: #03d5ff;
+}
+
+.uploadInput::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.uploadInput::before {
+  content: 'Choose File';
+  display: inline-block;
+  background: linear-gradient(45deg, #720e9e, #4a0d88);
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 16px;
+  transition: all 0.2s ease;
+}
+
+.uploadInput:hover::before {
+  background: linear-gradient(45deg, #8a10bd, #5a0ea5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.uploadInput:active::before {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Different styling for PDF uploads vs Image uploads */
+#noc-upload::before {
+  content: 'Choose PDF File';
+  background: linear-gradient(45deg, #720e9e, #4a0d88);
+}
+
+#receipt-upload::before {
+  content: 'Choose Image File';
+  background: linear-gradient(45deg, #0e729e, #0d4a88);
+}
+
+/* Helper text for upload fields */
+.uploadHelper {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
+  margin-top: -5px;
+  padding-left: 5px;
+}
+
+/* Improved styling for upload label */
+.uploadLabel {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* File name display styling */
+.fileNameDisplay {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: rgba(40, 10, 72, 0.4);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #03d5ff;
+  word-break: break-all;
+  display: none; /* Will be shown via JS when file is selected */
+}
+
+/* Animation for file selection */
+@keyframes fileSelected {
+  0% { transform: translateY(5px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.fileSelected {
+  display: block;
+  animation: fileSelected 0.3s ease-out forwards;
+}
+
+.uploadContainer {
+  margin-top: 15px;
+}
+
+.uploadLabel {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.requiredIndicator {
+  color: #ea00ff;
+  margin-left: 4px;
+}
+
+.uploadHelper {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.qrCodeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .qrCodeContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.qrCodeImage {
+  width: 200px;
+  height: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .qrCodeImage {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.qrInstructions {
+  flex: 1;
+}
+
+.qrInstructions p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.transactionForm {
+  margin-top: 15px;
+}
+
+.transactionLabel {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.transactionInput {
+  width: 100%;
+  padding: 12px;
+  background: rgba(20, 5, 36, 0.8);
+  border: 1px solid rgba(186, 186, 186, 0.3);
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.transactionHelper {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 12px;
+  background: linear-gradient(45deg, #720e9e, #4a0d88);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submitButton:hover {
+  background: linear-gradient(45deg, #8a10bd, #5a0ea5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.paymentNote {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(3, 213, 255, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #03d5ff;
+}
+
+.paymentNote p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.paymentNote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Improved notification styles */
+.notificationWrapper {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  animation: slideDown 0.5s ease-out forwards;
+  padding: 0 20px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.successNotification,
+.errorNotification {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.successNotification {
+  background-color: #ecfdf5;
+  border-left: 4px solid #10b981;
+}
+
+.errorNotification {
+  background-color: #fef2f2;
+  border-left: 4px solid #ef4444;
+}
+
+.notificationIcon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.successIcon {
+  fill: #10b981;
+}
+
+.errorIcon {
+  fill: #ef4444;
+}
+
+.notificationContent {
+  flex-grow: 1;
+}
+
+.notificationTitle {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #111827;
+}
+
+.notificationMessage {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.notificationClose {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.notificationClose:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notificationClose svg {
+  width: 20px;
+  height: 20px;
+  fill: #6b7280;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 640px) {
+  .notificationWrapper {
+    top: 60px;
+    padding: 0 12px;
+  }
+  
+  .successNotification,
+  .errorNotification {
+    padding: 12px;
+  }
+  
+  .notificationIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+  
+  .notificationTitle {
+    font-size: 16px;
+  }
+  
+  .notificationMessage {
+    font-size: 13px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 380px) {
+  .notificationTitle {
+    font-size: 14px;
+  }
+  
+  .notificationMessage {
+    font-size: 12px;
+  }
+  
+  .notificationIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+}
+
+/* NOC Download Button Styles */
+.uploadHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(40deg, #ea00ff, #03d5ff);
+  color: #000;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.downloadButton:active {
+  transform: translateY(0);
+}
+
+/* Make sure the layout works well on mobile */
+@media (max-width: 600px) {
+  .uploadHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .downloadButton {
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}

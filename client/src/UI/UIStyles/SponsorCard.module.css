@@ -1,0 +1,59 @@
+.prizeContainer {
+    width: 200px;
+    height: 200px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background: #20043d;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 25px 10px;
+    box-shadow: 0 1px 1px #ea00ff, 0 2px 1px #ea00ff, 0 2px 4px #03d5ff, 0 1px 2px #03d5ff;
+    position: relative;
+    transition: all 0.3s ease;
+    /* background: linear-gradient(45deg, #20043d, #2a0854); */
+    background-color: #ffffffbd;
+    color: #000000;
+    animation: smoothShadow 3s linear infinite;
+}
+
+.image {
+    width: 150px;
+    /* max-width: 100px?; */
+    /* height: 100px; */
+    /* max-height: 100px; */
+    /* background-color: #ffffff; */
+}
+
+.prize {
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.prizeContainer:hover {
+    transform: translateY(-15px);
+    /* background: linear-gradient(45deg, #2a0854, #20043d); */
+    background: #ffffff;
+}
+
+@keyframes smoothShadow {
+    0% {
+        box-shadow: 0 2px 8px rgba(234, 0, 255, 0.8), 0 2px 8px rgba(3, 213, 255, 0.2);
+    }
+    25% {
+        box-shadow: 0 2px 8px rgba(234, 0, 255, 0.2), 0 2px 8px rgba(3, 213, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 2px 8px rgba(3, 213, 255, 0.8), 0 2px 8px rgba(234, 0, 255, 0.2);
+    }
+    75% {
+        box-shadow: 0 2px 8px rgba(3, 213, 255, 0.2), 0 2px 8px rgba(234, 0, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 2px 8px rgba(234, 0, 255, 0.8), 0 2px 8px rgba(3, 213, 255, 0.2);
+    }
+}

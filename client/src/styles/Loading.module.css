@@ -1,0 +1,75 @@
+.loadingBody {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .loadingScreen {
+    text-align: center;
+  }
+  
+  .console {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 20px;
+    background-color: #00ff00;
+    margin-left: 2px;
+  }
+  
+  .cursor.active {
+    background-color: transparent;
+  }
+  
+  .progressBar {
+    width: 80%;
+    height: 10px;
+    background: #222;
+    border: 2px solid #00ff00;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progressBarInner {
+    width: 0;
+    height: 100%;
+    background: #00ff00;
+    animation: fillProgressBar 2s linear forwards;
+  }
+  
+  @keyframes fillProgressBar {
+    to {
+      width: 100%;
+    }
+  }
+  
+  .redirect {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #00ff00;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

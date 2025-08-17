@@ -1,0 +1,38 @@
+.AboutUs {
+    width: 80%;
+    margin: 300px auto 0px auto;
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+    margin: 15px;
+}
+
+.terminalHolder {
+    width: 80vw;
+    height: 350px;
+    overflow: auto;
+    margin: 10px auto;
+    box-shadow: 0px 0px 15px 10px rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .terminalHolder {
+        width: 80vw;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+    .terminalHolder {
+        width: 80vw;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1300px) {
+
+}

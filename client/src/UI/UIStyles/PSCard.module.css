@@ -1,0 +1,119 @@
+.PSCard {
+    color: #dedede;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    margin: 20px;
+    padding: 20px;
+    background: #20043d;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 4fr;
+    width: 1380px;
+}
+
+.PSId{
+    padding: 10px;
+    border: 0.5px solid #818181;
+    text-align: center;
+}
+
+.PSTheme{
+    padding: 10px;
+    border: 0.5px solid #818181;
+    text-align: center;
+}
+
+.PSTitle{
+    padding: 10px;
+    border: 0.5px solid #818181;
+    text-align: center;
+}
+
+.PSDescription{
+    padding: 10px;
+    border: 0.5px solid #818181;
+    text-align: center;
+}
+
+
+.IdLabel {
+    margin: 5px;
+    margin: 5px 5px 10px 5px;
+    border-bottom: 2px solid #818181;
+}
+
+.IdValue {
+    text-align: center;
+    font-size: 216px;
+    font-size: 30px;
+    font-family: monospace
+}
+
+.themeLabel {
+    margin: 5px;
+    margin: 5px 5px 10px 5px;
+    border-bottom: 2px solid #818181;
+}
+
+.themeValue {
+    text-align: justify;
+    font-size: 16px;
+    font-family: monospace
+}
+
+.titleLabel {
+    margin: 5px;
+    margin: 5px 5px 10px 5px;
+    border-bottom: 2px solid #818181;
+}
+
+.titleValue {
+    text-align: justify;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.descriptionLabel {
+    margin: 5px;
+    margin: 5px 5px 10px 5px;
+    border-bottom: 2px solid #818181;
+}
+
+.descriptionValue {
+    text-align: justify;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: 300;
+}
+
+@media (max-width: 400px) {
+    .PSCard {
+        width: 800px;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .value {
+        font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 1299px) {
+    .PSCard {
+        width: 950px;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .value {
+        font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 1300px) {
+    .PSCard {
+        width: 1300px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+  }

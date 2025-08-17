@@ -1,0 +1,194 @@
+.HeadSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.headBtnDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.h1{
+    color: white;
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+.Btn {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border: none;
+    margin: 15px;
+    text-align: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+} 
+.registerBtn {
+    background-color: #ea00ff;
+    text-decoration: none;
+    color: #ffffff;
+    color: #000000;
+}
+
+.problemStateBtn {
+    background-color: #03d5ff;
+    text-decoration: none;
+    color: #ffffff;
+    color: #000000;
+}
+
+.registerBtn:hover {
+    background-color: #b400c5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.problemStateBtn:hover {
+    background-color: #0091cb;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clgInfo {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.info {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dateInfo {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.MainLogo {
+    height: 200px;
+}
+
+.line {
+    width: 60vw;
+    height: 2px;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    margin: 5px 5px 20px 5px;
+    border-radius: 20px;
+}
+
+@media (max-width: 319px) {
+    .Btn {
+        padding: 7px;
+        font-size: 14px;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        border: none;
+        margin: 5px;
+        text-align: center;
+        width: 120px;
+    }
+
+    .MainLogo {
+        width: 90vw;
+    }
+
+    .clgInfo {
+        font-size: 18px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .clgInfo {
+        font-size: 18px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .MainLogo {
+        width: 90vw;
+    }
+
+    /* .Btn {
+        padding: 7px;
+        font-size: 17px;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        border: none;
+        margin: 15px;
+        text-align: center;
+    } */
+
+    .Btn {
+        padding: 7px;
+        font-size: 14px;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+        border: none;
+        margin: 5px;
+        text-align: center;
+        width: 120px;
+    }
+
+    .line {
+        margin: 2px;
+        width: 90vw;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+    .clgInfo {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    .MainLogo {
+        width: 90vw;
+        max-width: fit-content;
+    }
+
+    .Btn {
+        padding: 10px;
+        font-size: 17px;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        border: none;
+        margin: 15px;
+    }
+}
+
+@media (min-width: 1300px) {
+
+}

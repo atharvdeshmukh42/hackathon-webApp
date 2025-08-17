@@ -1,0 +1,29 @@
+.heading {
+    color: #ffffff;
+    font-family: "Jersey 15";
+    font-family: doto;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 32px;
+        justify-content: center;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 1299px) {
+    .heading {
+        font-size: 48px;
+        justify-content: center;
+    }
+  }
+  
+  @media (min-width: 1300px) {
+    .heading {
+        font-size: 64px;
+        justify-content: center;
+    }
+  }

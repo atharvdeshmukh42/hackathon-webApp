@@ -1,0 +1,79 @@
+.displayDiv {
+  width: 92px;
+  height: 112px;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+
+.contentHolder {
+  width: 90px;
+  height: 110px;
+  background-color: radial-gradient(#280a48, #20043d);
+  background: #20043d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.name {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.time {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+@media (max-width: 400px) {
+  .displayDiv {
+    width: 64px;
+    height: 80px;
+    margin: 20px 5px;
+  }
+
+  .contentHolder {
+    width: 61px;
+    height: 77px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .time {
+    font-family: 20px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+  .displayDiv {
+    width: 74px;
+    height: 90px;
+  }
+
+  .contentHolder {
+    width: 72px;
+    height: 88px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .time {
+    font-family: 24px;
+  }
+}
+
+@media (min-width: 1300px) {
+}

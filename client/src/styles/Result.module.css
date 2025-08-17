@@ -1,0 +1,99 @@
+.heading {
+  color: #ffffff;
+  font-family: "Jersey 15";
+  font-family: doto;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}  
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-family: monospace;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 5px auto;
+  font-family: monospace;
+  text-align: center;
+}
+
+.divider {
+  width: 6rem;
+  height: 0.25rem;
+  background: #ffffff;
+  margin: 1.5rem auto 2rem;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-weight: 600;
+  border: none;
+  margin: 15px auto;
+  text-align: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03d5ff;
+  text-decoration: none;
+  color: #ffffff;
+  color: #000000;
+  max-width: fit-content;
+}
+
+.btn:hover {
+  background-color: #0091cb;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1299px) {
+  .heading {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .heading {
+    font-size: 58px;
+  }
+}
